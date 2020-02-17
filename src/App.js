@@ -15,8 +15,8 @@ class App extends Component {
         CreateDate: "May 2018"
       },
       {
-        Title: "Cloudii",
-        Description: "The Cloudii express API provides an interface for weather analysis, The user can enter weather data over a relevant area and have the API return a calculated average rainfall over a selected period of time.",
+        Title: "MTG-Builder",
+        Description: "My Magic The Gathering Builder application is desiged to assist new and seasoned players build fantastic decks, User's can build new decks by calling the MTG api to card search. They can also check their deck's stats, draw random hands and develop play styles.",
         CreateDate: "September 2019"
       },
       {
