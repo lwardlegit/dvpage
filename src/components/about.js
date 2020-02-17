@@ -17,8 +17,8 @@ export default class About extends Component{
 
       <div className="about">
         <h3 className="headers">A World Powered by technology</h3>
-        <p>An Avid technologist, Luther spends his free time designing prosthetics and human wearables,
-        his previous works include <a href="https://www.google.com/">The Event Horizon Hand</a> as well as the bluetooth wearable <a href="https://www.google.com/">Tinney</a>.
+        <p>An Avid nerd, Luther spends his free time designing fun and entertaining apps for casual use,
+        his previous largest project <a href="https://github.com/lwardlegit/mtgbuild">The MTG builder app</a> allows users to build custom magic the gathering decks.
         </p>
         <br/>
       </div>
@@ -27,7 +27,7 @@ export default class About extends Component{
         <h3 className="headers">Pushing boundaries</h3>
         <p>
          As a developer who pushes the boundaries, Luther believes that technology should exist tangibly,
-         that it should have a physical impact on the world around us. One such device, his <a href = "https://www.google.com/">Silent Alarm System</a> speaks to his interests to create an interactable world driven by the power of networking technology and iot devices.
+         that it should have a physical impact on the world around us. One such device, his <a href = "https://github.com/lwardlegit/Silent_Arduino_Alarm_System">Silent Alarm System</a> speaks to his interests to create an interactable world driven by the power of networking technology and iot devices.
         </p>
         <br/>
       </div>
