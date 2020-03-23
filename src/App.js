@@ -9,6 +9,7 @@ import Resight from './components/projectPages/builder.js';
 import Motivational from './components/projectPages/motivational.js';
 import Calculator from './components/projectPages/calculator.js';
 import ArduinoAlarm from './components/projectPages/arduinoAlarm.js';
+import Pantree from './components/projectPages/Pantree.js';
 
 import {
   BrowserRouter as Router,
@@ -68,40 +69,41 @@ class App extends Component {
               <header className="App-header">
               </header>
 
-              <div class="maincontent">
+              <div className="maincontent">
                   <About intro= {this.state.intro} />
-              <div class="rightSide">
+              <div className="rightSide">
                   <Projects projects={this.state.projects}/>
-                  <h3 class="headers edHeader">Education</h3>
+                  <h3 className="headers edHeader">Education</h3>
                   <Education />
               </div>
                   <Skills skills={this.state.skills}/>
               </div>
             </div>
           </Route>
+                <Route path='/resight'>
+                      <Resight/>
+                  </Route>
 
+                <Route path='/builder'>
+                      <Builder/>
+                </Route>
 
-          <Route path='/resight'>
-            <Resight/>
-            </Route>
+                <Route path='/arduino-alarm'>
+                      <ArduinoAlarm/>
+                </Route>
 
-          <Route path='/builder'>
-            <Builder/>
-          </Route>
+                <Route path='/calculator'>
+                      <Calculator/>
+                </Route>
 
-          <Route path='/arduino-alarm'>
-            <ArduinoAlarm/>
-          </Route>
+                <Route path='/motivational'>
+                      <Motivational/>
+                </Route>
 
-          <Route path='/calculator'>
-            <Calculator/>
-          </Route>
-          <Route path='/motivational'>
-            <Motivational/>
-          </Route>
-
+                <Route path='/pantree'>
+                      <Pantree/>
+                </Route>
         </Switch>
-      
       </Router>
     );
   }

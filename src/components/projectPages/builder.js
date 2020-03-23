@@ -6,9 +6,12 @@ export default class Builder extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='projCont'>
+                <h3>MTG-Builder</h3>
                 <div className='projPageContainer'>
-                    <img></img>
+                    
+                    
+                   
                     <p>MTG builder is a magic the gathering card game application built in react
                         it aims to assist new and veteran players of the game the chance to build
                         comprehensive decks based on returned stats run by the app during an analysis of each deck.
@@ -28,7 +31,7 @@ export default class Builder extends Component {
                         </ul>
                     </p>
                     <div className='projPageContainer'>
-                        <p>This app was built using</p>
+                        <p>This app uses:</p>
                         {this.state.tags.map((index, i)=>{
                             return(
                             <span className='projTags' key={i}> {index} </span>
@@ -36,6 +39,10 @@ export default class Builder extends Component {
                         })
                     }
                     </div>
+                </div>
+
+                <div className='Carosel'>
+                <img alt='mtgbuilder abilities and features'></img>
                 </div>
             </div>
         )
