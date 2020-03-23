@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Carousel from 'react-bootstrap/Carousel'
 export default class Builder extends Component {
     state={
         tags:['react','javaScript','Node js','CSS']
@@ -41,8 +41,40 @@ export default class Builder extends Component {
                     </div>
                 </div>
 
-                <div className='Carosel'>
-                <img alt='mtgbuilder abilities and features'></img>
+                <div>
+                <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100 Carosel"
+      src={require("../../images/builder/builder_1.png")}
+      alt="builder"
+      width='300px'
+      height='450px'
+    />
+    
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100 Carosel"
+      src={require("../../images/builder/builder_2.png")}
+      alt="initial app view"
+      width='300px'
+      height='450px'
+    />
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+       className="d-block w-100 Carosel"
+       src={require("../../images/builder/builder_3.png")}
+       alt="builder"
+       width='300px'
+       height='450px'
+    />
+
+  </Carousel.Item>
+</Carousel>
+<div className='footer'></div>
                 </div>
             </div>
         )

@@ -1,32 +1,33 @@
 import React, { Component } from 'react'
-
+import Carousel from 'react-bootstrap/Carousel'
 export default class Builder extends Component {
     state={
-        tags:['react','javaScript','Node js','CSS']
+        tags:['react','javaScript','Express js','Node js','CSS']
     }
     render() {
         return (
             <div className='projCont'>
-                <h3>MTG-Builder</h3>
+                <h3>Pantree</h3>
                 <div className='projPageContainer'>
                     
                     
                    
-                    <p>MTG builder is a magic the gathering card game application built in react
-                        it aims to assist new and veteran players of the game the chance to build
-                        comprehensive decks based on returned stats run by the app during an analysis of each deck.
+                    <p>Pantree is a mobile wrapper for google spreadsheet data. Using oAuth2 and the googlesheets API v4
+                      Pantree projects your sheet data into a scrollable mobile setting. This application is still a work in progress.
+                      In the future the application will allow real time gps updates and expiration dates for items stored.
                         <br></br>
                         <br></br>
-                        Using the Magic the gathering API to query the library of available cards, players can search
-                        for any card in the app as well as use a list of advanced search features and filters.
+                        While Pantree is designed for organizations that share google sheets among many members and a single google account,
+                        it also works pretty well for people at home who want to do food prepping for events and or potential stocking for
+                        a natural disaster.
                         <br></br>
                         <br></br>
                        <b> MTG-Builder provides</b>:
                         <ul>
-                            <li>Randomly generated hands</li>
-                            <li>Ability to generate your own stats</li>
-                            <li>Deck by deck comparisons of strengths and weaknesses</li>
-                            <li>deck color and type composition %</li>
+                            <li>Read a summary of your sheet</li>
+                            <li>Write to your sheet</li>
+                            <li>get gps updates when your items expire</li>
+                            <li>share your inventory with anyone using your account</li>
 
                         </ul>
                     </p>
@@ -41,8 +42,40 @@ export default class Builder extends Component {
                     </div>
                 </div>
 
-                <div className='Carosel'>
-                <img alt='mtgbuilder abilities and features'></img>
+                <div>
+                <Carousel className='carBackground'>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 Carosel"
+      src={require("../../images/pantree/pantree_1.png")}
+      alt="builder"
+      width='250px'
+      height='450px'
+    />
+    
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-60 Carosel"
+      src={require("../../images/pantree/pantree_2.png")}
+      alt="initial app view"
+      width='300px'
+      height='450px'
+    />
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+       className="d-block w-50 Carosel"
+       src={require("../../images/pantree/pantree_3.png")}
+       alt="builder"
+       width='250px'
+       height='450px'
+    />
+
+  </Carousel.Item>
+</Carousel>
+<div className='footer'></div>
                 </div>
             </div>
         )

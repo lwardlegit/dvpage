@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Carousel from 'react-bootstrap/Carousel'
 export default class Builder extends Component {
     state={
         tags:['react','javaScript','Node js','CSS']
@@ -7,29 +7,31 @@ export default class Builder extends Component {
     render() {
         return (
             <div className='projCont'>
-                <h3>MTG-Builder</h3>
+                <h3>Arduino Remote Alarm System</h3>
                 <div className='projPageContainer'>
                     
                     
                    
-                    <p>MTG builder is a magic the gathering card game application built in react
-                        it aims to assist new and veteran players of the game the chance to build
-                        comprehensive decks based on returned stats run by the app during an analysis of each deck.
+                    <p>The arduino remote alarm system combines web development and mechatronics. The arduino is equipped
+                        with an accelerometer which triggers when the Z-axis accelerates faster than a specific value set 
+                        by the user.
+                    </p>
                         <br></br>
                         <br></br>
-                        Using the Magic the gathering API to query the library of available cards, players can search
-                        for any card in the app as well as use a list of advanced search features and filters.
+                        <p>Upon being triggered, the arduino sends an http request to an express server and triggers a call from
+                        a node js emailer library. Upon successfully completing the request, I'm able to receive an email telling
+                        me that the alarm has been triggered and that I should check it out.
+                        </p>
                         <br></br>
                         <br></br>
-                       <b> MTG-Builder provides</b>:
+                       <b> Ardunio Alarm Key Features</b>:
                         <ul>
-                            <li>Randomly generated hands</li>
-                            <li>Ability to generate your own stats</li>
-                            <li>Deck by deck comparisons of strengths and weaknesses</li>
-                            <li>deck color and type composition %</li>
+                            <li>Automatically connects to WiFi</li>
+                            <li>Battery powered</li>
+                            <li>attaches to any door without setup</li>
+                            <li>can be run on localhost or on a specific host</li>
 
                         </ul>
-                    </p>
                     <div className='projPageContainer'>
                         <p>This app uses:</p>
                         {this.state.tags.map((index, i)=>{
@@ -41,8 +43,30 @@ export default class Builder extends Component {
                     </div>
                 </div>
 
-                <div className='Carosel'>
-                <img alt='mtgbuilder abilities and features'></img>
+                <div>
+                <Carousel className='carBackground'>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 Carosel"
+      src={require("../../images/arduino/arduino_1.jpg")}
+      alt="builder"
+      width='200px'
+      height='450px'
+    />
+    
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50 Carosel"
+      src={require("../../images/arduino/arduino_2.jpg")}
+      alt="initial app view"
+      width='200px'
+      height='450px'
+    />
+
+  </Carousel.Item>
+</Carousel>
+<div className='footer'></div>
                 </div>
             </div>
         )
