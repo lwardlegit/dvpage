@@ -12,6 +12,7 @@ export default class Projects extends Component{
           <h3 className="headers"><span>{project.Title}</span></h3>
           <p>{project.Description}</p>
           <b>-- {project.CreateDate}</b>
+          <a className='projLinks' href={project.link}>{project.Title}</a>
           </div>
         )
         })}

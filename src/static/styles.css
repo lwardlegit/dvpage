@@ -45,6 +45,11 @@
         width: 50%;
         overflow: hidden;
       }
+      .projLinks{
+        margin-left: 1em;
+        color:blueviolet;
+        text-decoration: none;
+      }
       .chunk {
         display: block;
       }
@@ -184,4 +189,23 @@ padding-top:3em;
 .projectdiv{
   margin-top: 5em;
   height: 10em;
+}
+.projLinks{
+  margin-left: 1em;
+  color:blueviolet;
+  text-decoration: none;
+}
+.projTags{
+  margin:.5em;
+  padding: .5em;
+  background-color: rgb(196, 79, 196);
+  border-radius: 10px;
+  color:white;
+  text-align: center;
+  font-size: small;
+
+}
+.projTags:hover{
+  background-color: rebeccapurple;
+
 }
